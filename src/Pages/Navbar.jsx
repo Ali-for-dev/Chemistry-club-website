@@ -57,12 +57,12 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <a
-              href="/events"
+            <Link
+              to="/events"
               className="text-white hover:text-fuchsia-600 transition-colors"
             >
               Events
-            </a>
+            </Link>
             <Link
               to="/contact"
               className="text-white hover:text-fuchsia-600 transition-colors"
