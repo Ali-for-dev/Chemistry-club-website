@@ -83,7 +83,7 @@ const ContactPage = () => {
       <div className="container mx-auto px-4 md:px-6 py-16">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h1>
-          <div className="h-1 w-20 bg-green-500 mx-auto mb-8"></div>
+          <div className="h-1 w-20 bg-fuchsia-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300">
             Have questions about our club? Want to collaborate on a project?
             We'd love to hear from you! Fill out the form below or reach out
@@ -101,7 +101,7 @@ const ContactPage = () => {
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-green-500 bg-opacity-20 p-3 rounded-full">
+                <div className="bg-fuchsia-600 bg-opacity-20 p-3 rounded-full">
                   <MapPin className="h-6 w-6 text-white-400" />
                 </div>
                 <div>
@@ -117,7 +117,7 @@ const ContactPage = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-green-500 bg-opacity-20 p-3 rounded-full">
+                <div className="bg-fuchsia-600 bg-opacity-20 p-3 rounded-full">
                   <Mail className="h-6 w-6 text-white-400" />
                 </div>
                 <div>
@@ -125,7 +125,7 @@ const ContactPage = () => {
                   <p className="text-gray-300">
                     <a
                       href="mailto:contact@MolecularMinds.edu"
-                      className="hover:text-green-400 transition-colors"
+                      className="hover:text-fuchsia-600 transition-colors"
                     >
                       contact@MolecularMinds.edu
                     </a>
@@ -134,7 +134,7 @@ const ContactPage = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-green-500 bg-opacity-20 p-3 rounded-full">
+                <div className="bg-fuchsia-600 bg-opacity-20 p-3 rounded-full">
                   <Phone className="h-6 w-6 text-white-400" />
                 </div>
                 <div>
@@ -142,7 +142,7 @@ const ContactPage = () => {
                   <p className="text-gray-300">
                     <a
                       href="tel:+15551234567"
-                      className="hover:text-green-400 transition-colors"
+                      className="hover:text-fuchsia-600 transition-colors"
                     >
                       (555) 123-4567
                     </a>
@@ -151,7 +151,7 @@ const ContactPage = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-green-500 bg-opacity-20 p-3 rounded-full">
+                <div className="bg-fuchsia-600 bg-opacity-20 p-3 rounded-full">
                   <Clock className="h-6 w-6 text-white-400" />
                 </div>
                 <div>
@@ -171,7 +171,7 @@ const ContactPage = () => {
                 <a
                   href="https://www.instagram.com/molecularminds.club/"
                   target="_blank"
-                  className="bg-gray-700 hover:bg-green-500 p-3 rounded-full transition-colors"
+                  className="bg-gray-700 hover:bg-fuchsia-600 p-3 rounded-full transition-colors"
                 >
                   <svg
                     className="h-5 w-5 text-white"
@@ -194,9 +194,9 @@ const ContactPage = () => {
           <div className="md:col-span-3 bg-gray-800 bg-opacity-50 rounded-xl p-6 md:p-8 backdrop-blur-sm">
             {isSubmitted ? (
               <div className="text-center py-8">
-                <div className="bg-green-500 bg-opacity-20 p-4 rounded-full inline-flex mb-6">
+                <div className="bg-fuchsia-600 bg-opacity-20 p-4 rounded-full inline-flex mb-6">
                   <svg
-                    className="h-12 w-12 text-green-400"
+                    className="h-12 w-12 text-fuchsia-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -216,7 +216,7 @@ const ContactPage = () => {
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors"
+                  className="inline-flex items-center px-6 py-3 bg-fuchsia-600 hover:bg-fuchsia-600 text-white rounded-lg transition-colors"
                 >
                   Send Another Message
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -241,7 +241,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       className={`w-full px-4 py-3 bg-gray-700 border ${
                         errors.name ? "border-red-500" : "border-gray-600"
-                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500`}
+                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-600`}
                       placeholder="John Doe"
                     />
                     {errors.name && (
@@ -264,7 +264,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       className={`w-full px-4 py-3 bg-gray-700 border ${
                         errors.email ? "border-red-500" : "border-gray-600"
-                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500`}
+                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-600`}
                       placeholder="john@example.com"
                     />
                     {errors.email && (
@@ -289,7 +289,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       className={`w-full px-4 py-3 bg-gray-700 border ${
                         errors.subject ? "border-red-500" : "border-gray-600"
-                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500`}
+                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-600`}
                       placeholder="How can we help?"
                     />
                     {errors.subject && (
@@ -314,7 +314,7 @@ const ContactPage = () => {
                       rows="5"
                       className={`w-full px-4 py-3 bg-gray-700 border ${
                         errors.message ? "border-red-500" : "border-gray-600"
-                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500`}
+                      } rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-600`}
                       placeholder="Your message here..."
                     ></textarea>
                     {errors.message && (
@@ -331,7 +331,7 @@ const ContactPage = () => {
                       className={`w-full inline-flex justify-center items-center px-6 py-3 ${
                         isSubmitting
                           ? "bg-gray-600"
-                          : "bg-green-500 hover:bg-green-600"
+                          : "bg-fuchsia-600 hover:bg-fuchsia-600"
                       } text-white rounded-lg transition-colors`}
                     >
                       {isSubmitting ? (

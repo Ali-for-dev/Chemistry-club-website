@@ -37,7 +37,7 @@ const LandingPage = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Explore the <span className="text-green-400">Wonders</span> of
+              Explore the <span className="text-fuchsia-600">Wonders</span> of
               Chemistry
             </h1>
             <p className="text-xl text-gray-300">
@@ -45,18 +45,18 @@ const LandingPage = () => {
               discover the building blocks of our universe.
             </p>
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-              <button className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-medium transition-colors text-lg">
+              <button className="bg-fuchsia-600 hover:bg-fuchsia-600 px-6 py-3 rounded-full font-medium transition-colors text-lg">
                 Join Our Club
               </button>
-              <button className="border border-white hover:border-green-400 hover:text-green-400 px-6 py-3 rounded-full font-medium transition-colors text-lg">
+              <button className="border border-white hover:border-fuchsia-600 hover:text-fuchsia-600 px-6 py-3 rounded-full font-medium transition-colors text-lg">
                 Learn More
               </button>
             </div>
           </div>
           <div className="relative h-64 md:h-auto flex justify-center">
-            <div className="absolute w-48 h-48 md:w-64 md:h-64 bg-green-500 rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute w-48 h-48 md:w-64 md:h-64 bg-fuchsia-600 rounded-full opacity-20 animate-pulse"></div>
             <div className="relative z-10">
-              <Atom className="w-48 h-48 md:w-64 md:h-64 text-green-400" />
+              <Atom className="w-48 h-48 md:w-64 md:h-64 text-fuchsia-600" />
             </div>
           </div>
         </div>
@@ -71,8 +71,8 @@ const LandingPage = () => {
           {/* Feature 1 */}
           <div className="bg-gray-800 bg-opacity-50 rounded-xl p-6 shadow-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all">
             <div className="flex justify-center mb-4">
-              <div className="bg-green-500 bg-opacity-20 p-3 rounded-full">
-                <Beaker className="h-10 w-10 text-green-300" />
+              <div className="bg-fuchsia-600 bg-opacity-20 p-3 rounded-full">
+                <Beaker className="h-10 w-10 text-fuchsia-400" />
               </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-2">
@@ -87,8 +87,8 @@ const LandingPage = () => {
           {/* Feature 2 */}
           <div className="bg-gray-800 bg-opacity-50 rounded-xl p-6 shadow-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all">
             <div className="flex justify-center mb-4">
-              <div className="bg-green-500 bg-opacity-20 p-3 rounded-full">
-                <FlaskConical className="h-10 w-10 text-green-300" />
+              <div className="bg-fuchsia-600 bg-opacity-20 p-3 rounded-full">
+                <FlaskConical className="h-10 w-10 text-fuchsia-400" />
               </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-2">
@@ -103,8 +103,8 @@ const LandingPage = () => {
           {/* Feature 3 */}
           <div className="bg-gray-800 bg-opacity-50 rounded-xl p-6 shadow-lg backdrop-blur-sm hover:transform hover:scale-105 transition-all">
             <div className="flex justify-center mb-4">
-              <div className="bg-green-500 bg-opacity-20 p-3 rounded-full">
-                <Atom className="h-10 w-10 text-green-300" />
+              <div className="bg-fuchsia-600 bg-opacity-20 p-3 rounded-full">
+                <Atom className="h-10 w-10 text-fuchsia-400" />
               </div>
             </div>
             <h3 className="text-xl font-semibold text-center mb-2">
@@ -132,7 +132,7 @@ const LandingPage = () => {
               </p>
             </div>
             <div className="flex flex-col space-y-4 md:items-end">
-              <button className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-medium transition-colors text-lg w-full md:w-auto">
+              <button className="bg-fuchsia-600 hover:bg-fuchsia-600 px-6 py-3 rounded-full font-medium transition-colors text-lg w-full md:w-auto">
                 Register Now
               </button>
               <p className="text-gray-300 text-center md:text-right">
@@ -149,7 +149,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Beaker className="h-6 w-6 text-green-400" />
+                <Beaker className="h-6 w-6 text-fuchsia-600" />
                 <span className="text-lg font-bold">MolecularMinds</span>
               </div>
               <p className="text-gray-400">
@@ -162,7 +162,7 @@ const LandingPage = () => {
                 <li>
                   <a
                     href="/"
-                    className="hover:text-green-400 transition-colors"
+                    className="hover:text-fuchsia-600 transition-colors"
                   >
                     Home
                   </a>
@@ -170,7 +170,7 @@ const LandingPage = () => {
                 <li>
                   <a
                     href="/about"
-                    className="hover:text-green-400 transition-colors"
+                    className="hover:text-fuchsia-600 transition-colors"
                   >
                     About Us
                   </a>
@@ -178,7 +178,7 @@ const LandingPage = () => {
                 <li>
                   <a
                     href="events"
-                    className="hover:text-green-400 transition-colors"
+                    className="hover:text-fuchsia-600 transition-colors"
                   >
                     Events
                   </a>
@@ -186,7 +186,7 @@ const LandingPage = () => {
                 <li>
                   <a
                     href="/contact"
-                    className="hover:text-green-400 transition-colors"
+                    className="hover:text-fuchsia-600 transition-colors"
                   >
                     Contact
                   </a>
@@ -203,7 +203,7 @@ const LandingPage = () => {
                 <a
                   href="https://www.instagram.com/molecularminds.club/"
                   target="_blank"
-                  className="text-gray-400 hover:text-green-400 transition-colors"
+                  className="text-gray-400 hover:text-fuchsia-600 transition-colors"
                 >
                   <svg
                     className="h-6 w-6"
@@ -229,7 +229,7 @@ const LandingPage = () => {
 
       {/* Scroll to top button */}
       <button
-        className="fixed bottom-6 right-6 bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+        className="fixed bottom-6 right-6 bg-fuchsia-600 p-3 rounded-full shadow-lg hover:bg-fuchsia-600 transition-colors"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <ChevronDown className="h-6 w-6 transform rotate-180" />

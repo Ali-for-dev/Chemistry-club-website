@@ -24,7 +24,7 @@ const EventsPage = () => {
       id: 2,
       title: "Experimental Techniques Workshop",
       thumbnail: f2,
-      videoUrl: video2,
+      videoUrl: video1,
       description: "In-depth workshop on advanced laboratory techniques.",
       date: "February 20, 2024",
     },
@@ -32,7 +32,7 @@ const EventsPage = () => {
       id: 3,
       title: "Student Research Presentations",
       thumbnail: f3,
-      videoUrl: video3,
+      videoUrl: video1,
       description:
         "Our members present their groundbreaking research projects.",
       date: "March 10, 2024",
@@ -41,7 +41,7 @@ const EventsPage = () => {
       id: 4,
       title: "Lab Safety Training",
       thumbnail: f1,
-      videoUrl: video4,
+      videoUrl: video1,
       description: "Comprehensive safety protocols for laboratory work.",
       date: "April 5, 2024",
     },
@@ -83,10 +83,10 @@ const EventsPage = () => {
       <div className="container mx-auto px-4 md:px-6 py-16">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Club <span className="text-green-400">Events</span> &{" "}
-            <span className="text-green-400">Videos</span>
+            Club <span className="text-fuchsia-600">Events</span> &{" "}
+            <span className="text-fuchsia-600">Videos</span>
           </h1>
-          <div className="h-1 w-20 bg-green-500 mx-auto mb-8"></div>
+          <div className="h-1 w-20 bg-fuchsia-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 mb-8">
             Explore our exciting events, workshops, and video archives that
             showcase the vibrant world of our chemistry club.
@@ -97,7 +97,7 @@ const EventsPage = () => {
       {/* Video Gallery Section */}
       <div className="container mx-auto px-4 md:px-6 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Club <span className="text-green-400">Video Gallery</span>
+          Club <span className="text-fuchsia-600">Video Gallery</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Selected Video Player */}
@@ -118,7 +118,7 @@ const EventsPage = () => {
                   </h3>
                   <div className="flex justify-between items-center">
                     <p className="text-gray-300">{selectedVideo.description}</p>
-                    <span className="text-sm text-green-400">
+                    <span className="text-sm text-fuchsia-600">
                       {selectedVideo.date}
                     </span>
                   </div>
@@ -149,7 +149,7 @@ const EventsPage = () => {
                   />
                   <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-30 transition-opacity"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-green-500 rounded-full p-3 bg-opacity-70">
+                    <div className="bg-fuchsia-600 rounded-full p-3 bg-opacity-70">
                       <Play className="h-8 w-8 text-white" />
                     </div>
                   </div>

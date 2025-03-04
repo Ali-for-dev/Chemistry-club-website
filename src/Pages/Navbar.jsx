@@ -38,7 +38,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Beaker className="h-8 w-8 text-green-400" />
+            <Beaker className="h-8 w-8 text-fuchsia-600" />
             <span className="text-xl font-bold">MolecularMinds</span>
           </div>
 
@@ -46,26 +46,26 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-white hover:text-green-400 transition-colors"
+              className="text-white hover:text-fuchsia-600 transition-colors"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-white hover:text-green-400 transition-colors"
+              className="text-white hover:text-fuchsia-600 transition-colors"
             >
               About Us
             </Link>
 
             <a
               href="/events"
-              className="text-white hover:text-green-400 transition-colors"
+              className="text-white hover:text-fuchsia-600 transition-colors"
             >
               Events
             </a>
             <Link
               to="/contact"
-              className="text-white hover:text-green-400 transition-colors"
+              className="text-white hover:text-fuchsia-600 transition-colors"
             >
               Contact
             </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
         <div className="flex justify-end p-4">
           <button
             onClick={() => setIsSidebarOpen(false)}
-            className="text-white hover:text-green-400"
+            className="text-white hover:text-fuchsia-600"
             aria-label="Close menu"
           >
             <X size={24} />
@@ -106,37 +106,31 @@ const Navbar = () => {
         </div>
         <div className="px-6 py-4 flex flex-col space-y-6">
           <div className="flex items-center space-x-2 border-b border-gray-700 pb-6">
-            <Beaker className="h-6 w-6 text-green-400" />
+            <Beaker className="h-6 w-6 text-fuchsia-600" />
             <span className="text-lg font-bold">MolecularMinds</span>
           </div>
           <div className="flex flex-col space-y-4">
             <Link
               to="/"
-              className="text-white hover:text-green-400 transition-colors py-2"
+              className="text-white hover:text-fuchsia-600 transition-colors py-2"
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-white hover:text-green-400 transition-colors py-2"
+              className="text-white hover:text-fuchsia-600 transition-colors py-2"
             >
               About Us
             </Link>
             <a
               href="#"
-              className="text-white hover:text-green-400 transition-colors py-2"
-            >
-              Members
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors py-2"
+              className="text-white hover:text-fuchsia-600 transition-colors py-2"
             >
               Events
             </a>
             <Link
               to="/contact"
-              className="text-white hover:text-green-400 transition-colors py-2"
+              className="text-white hover:text-fuchsia-600 transition-colors py-2"
             >
               Contact
             </Link>
