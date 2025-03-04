@@ -39,10 +39,11 @@ const AboutPage = () => {
       name: "DAHEM Amira",
       role: "Présidente",
       image: f7, // Replace with actual image
-      bio: "Double major in Chemistry and Business Administration. Manages club funding and coordinates with university administration.",
+      bio: "Master 2 chimie pharmaceutique J’adore formuler des produits cosmétiques naturels, et d’ailleurs, je possède ma propre marque artisanale, Diva Cosmetics.",
       socialLinks: {
-        email: "jwashington@example.edu",
-        linkedin: "jamalwashington",
+        email: "dahemamira.pro@gmail.com",
+        linkedin:
+          "amira-dahem-a98568352/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       },
     },
     {
@@ -50,7 +51,7 @@ const AboutPage = () => {
       name: "KHELAFI Lydia",
       role: "Vice Presidente",
       image: f10, // Replace with actual image
-      bio: "Double major in Chemistry and Business Administration. Manages club funding and coordinates with university administration.",
+      bio: "Une bio.",
       socialLinks: {
         email: "jwashington@example.edu",
         linkedin: "jamalwashington",
