@@ -6,10 +6,7 @@ import f2 from "../assets/Lab.jpeg";
 import f3 from "../assets/Lab.jpeg";
 
 // Import local videos
-import video1 from "../assets/videos/vid1.mov";
-import video2 from "../assets/videos/vid1.mov";
-import video3 from "../assets/videos/vid1.mov";
-import video4 from "../assets/videos/vid1.mov";
+import video1 from "../assets/Videos/vid1.mov";
 
 const EventsPage = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
