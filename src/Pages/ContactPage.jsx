@@ -8,6 +8,7 @@ import {
   Clock,
   ArrowRight,
 } from "lucide-react";
+import Navbar from "./Navbar";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -76,13 +77,7 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-indigo-900 text-white">
-      {/* Header */}
-      <div className="bg-gray-900 py-4">
-        <div className="container mx-auto px-4 md:px-6 flex items-center space-x-2">
-          <Beaker className="h-8 w-8 text-green-400" />
-          <span className="text-xl font-bold">MolecularMinds</span>
-        </div>
-      </div>
+      <Navbar />
 
       {/* Hero Section */}
       <div className="container mx-auto px-4 md:px-6 py-16">

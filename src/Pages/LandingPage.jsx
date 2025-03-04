@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Beaker, FlaskConical, Atom, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 const LandingPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -30,124 +31,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-indigo-900 text-white">
       {/* Navigation */}
-      <nav
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled ? "bg-gray-900 shadow-lg py-2" : "bg-transparent py-4"
-        }`}
-      >
-        <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <Beaker className="h-8 w-8 text-green-400" />
-            <span className="text-xl font-bold">MolecularMinds</span>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors"
-            >
-              Home
-            </a>
-            <Link
-              to="/about"
-              className="text-white hover:text-green-400 transition-colors"
-            >
-              About Us
-            </Link>
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors"
-            >
-              Members
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors"
-            >
-              Events
-            </a>
-            <Link
-              to="/contact"
-              className="text-white hover:text-green-400 transition-colors"
-            >
-              Contact
-            </Link>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white"
-            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            aria-label="Toggle menu"
-          >
-            {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </nav>
-
-      {/* Sidebar Navigation */}
-      <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 md:hidden ${
-          isSidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-        onClick={() => setIsSidebarOpen(false)}
-      ></div>
-
-      <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
-          isSidebarOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex justify-end p-4">
-          <button
-            onClick={() => setIsSidebarOpen(false)}
-            className="text-white hover:text-green-400"
-            aria-label="Close menu"
-          >
-            <X size={24} />
-          </button>
-        </div>
-        <div className="px-6 py-4 flex flex-col space-y-6">
-          <div className="flex items-center space-x-2 border-b border-gray-700 pb-6">
-            <Beaker className="h-6 w-6 text-green-400" />
-            <span className="text-lg font-bold">MolecularMinds</span>
-          </div>
-          <div className="flex flex-col space-y-4">
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors py-2"
-            >
-              Home
-            </a>
-            <Link
-              to="/about"
-              className="text-white hover:text-green-400 transition-colors py-2"
-            >
-              About Us
-            </Link>
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors py-2"
-            >
-              Members
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors py-2"
-            >
-              Events
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors py-2"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-      </div>
-
+      <Navbar />
       {/* Hero Section */}
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
