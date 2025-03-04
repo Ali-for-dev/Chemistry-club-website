@@ -8,80 +8,130 @@ import {
   ExternalLink,
 } from "lucide-react";
 import Navbar from "./Navbar";
+import f1 from "../assets/ALIM Nesrine.jpeg";
+import f2 from "../assets/BEN BERNOU Lyna.jpeg";
+import f3 from "../assets/BOUKARCHA Youcef.jpeg";
+import f4 from "../assets/CHABOU Hajer.jpeg";
+import f5 from "../assets/CHACHOUR Raouen.jpeg";
+import f6 from "../assets/CHOUIDER Ramzi.jpeg";
+import f7 from "../assets/DAHEM Amira.jpeg";
+import f8 from "../assets/GHAZI Dalia.jpeg";
+import f10 from "../assets/KHELAFI Lydia.jpeg";
+import f11 from "../assets/LARIBI Khalil.jpeg";
+import f12 from "../assets/Lab.jpeg";
 
 const AboutPage = () => {
   // Sample team members data - you would replace this with your actual data
   const teamMembers = [
     {
-      id: 1,
-      name: "Dr. Sarah Johnson",
-      role: "Faculty Advisor",
-      image: "/api/placeholder/300/300", // Replace with actual image
-      bio: "Ph.D in Organic Chemistry with 15 years of research experience in pharmaceutical compounds.",
-      socialLinks: {
-        email: "sarah.johnson@example.edu",
-        linkedin: "sarahjohnson",
-        github: "sjohnson",
-      },
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "President",
-      image: "/api/placeholder/300/300", // Replace with actual image
-      bio: "Senior Chemistry major with a focus on biochemistry. Research assistant in the University's enzyme kinetics lab.",
-      socialLinks: {
-        email: "mchen@example.edu",
-        linkedin: "michaelchen",
-        github: "mchen",
-      },
-    },
-    {
-      id: 3,
-      name: "Aisha Patel",
-      role: "Vice President",
-      image: "/api/placeholder/300/300", // Replace with actual image
-      bio: "Junior specializing in inorganic chemistry. Currently working on metal-organic frameworks for catalysis.",
-      socialLinks: {
-        email: "apatel@example.edu",
-        linkedin: "aishapatel",
-        github: "apatel",
-      },
-    },
-    {
       id: 4,
-      name: "Carlos Rodriguez",
-      role: "Lab Coordinator",
-      image: "/api/placeholder/300/300", // Replace with actual image
+      name: "CHABOU Hajer",
+      role: "Présidente & Formatrice",
+      image: f4, // Replace with actual image
       bio: "Graduate student researching sustainable chemistry applications. Expert in setting up complex experimental apparatus.",
       socialLinks: {
         email: "crodriguez@example.edu",
         linkedin: "carlosrodriguez",
-        github: "crodriguez",
       },
     },
     {
-      id: 5,
-      name: "Emma Wilson",
-      role: "Outreach Coordinator",
-      image: "/api/placeholder/300/300", // Replace with actual image
-      bio: "Chemistry Education major passionate about making science accessible to K-12 students through interactive demonstrations.",
-      socialLinks: {
-        email: "ewilson@example.edu",
-        linkedin: "emmawilson",
-        github: "ewilson",
-      },
-    },
-    {
-      id: 6,
-      name: "Jamal Washington",
-      role: "Treasurer",
-      image: "/api/placeholder/300/300", // Replace with actual image
+      id: 7,
+      name: "DAHEM Amira",
+      role: "Présidente",
+      image: f7, // Replace with actual image
       bio: "Double major in Chemistry and Business Administration. Manages club funding and coordinates with university administration.",
       socialLinks: {
         email: "jwashington@example.edu",
         linkedin: "jamalwashington",
-        github: "jwashington",
+      },
+    },
+    {
+      id: 9,
+      name: "KHELAFI Lydia",
+      role: "Vice Presidente",
+      image: f10, // Replace with actual image
+      bio: "Double major in Chemistry and Business Administration. Manages club funding and coordinates with university administration.",
+      socialLinks: {
+        email: "jwashington@example.edu",
+        linkedin: "jamalwashington",
+      },
+    },
+    {
+      id: 1,
+      name: "BEN BERNOU Lyna",
+      role: "Présidente des relations exterieurs",
+      image: f2, // Replace with actual image
+      bio: "Enter your Bio",
+      socialLinks: {
+        email: "email",
+        linkedin: "sarahjohnson",
+      },
+    },
+    {
+      id: 2,
+      name: "BOUKARCHA Youcef",
+      role: "Finance Tresorier",
+      image: f3, // Replace with actual image
+      bio: "Enter your Bio.",
+      socialLinks: {
+        email: "mchen@example.edu",
+        linkedin: "michaelchen",
+      },
+    },
+    {
+      id: 3,
+      name: "Alim Nesrine",
+      role: "Organisation",
+      image: f1, // Replace with actual image
+      bio: "Junior specializing in inorganic chemistry. Currently working on metal-organic frameworks for catalysis.",
+      socialLinks: {
+        email: "apatel@example.edu",
+        linkedin: "aishapatel",
+      },
+    },
+    {
+      id: 5,
+      name: "CHACHOUR Raouen",
+      role: "Organisation Evenement ",
+      image: f5, // Replace with actual image
+      bio: "Chemistry Education major passionate about making science accessible to K-12 students through interactive demonstrations.",
+      socialLinks: {
+        email: "ewilson@example.edu",
+        linkedin: "emmawilson",
+      },
+    },
+    {
+      id: 6,
+      name: "CHOUIDER Ramzi",
+      role: "Infographie Design",
+      image: f6, // Replace with actual image
+      bio: "Double major in Chemistry and Business Administration. Manages club funding and coordinates with university administration.",
+      socialLinks: {
+        email: "jwashington@example.edu",
+        linkedin: "jamalwashington",
+      },
+    },
+    {
+      id: 10,
+      name: "LARIBI Khalil",
+      role: "Media",
+      image: f11, // Replace with actual image
+      bio: "Double major in Chemistry and Business Administration. Manages club funding and coordinates with university administration.",
+      socialLinks: {
+        email: "jwashington@example.edu",
+        linkedin: "jamalwashington",
+      },
+    },
+
+    {
+      id: 8,
+      name: "GHAZI Dalia",
+      role: "Secretaire",
+      image: f8, // Replace with actual image
+      bio: "major in Chemistry and Business Administration. Manages club funding and coordinates with university administration.",
+      socialLinks: {
+        email: "jwashington@example.edu",
+        linkedin: "jamalwashington",
       },
     },
   ];
@@ -208,7 +258,7 @@ const AboutPage = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-green-500 rounded-lg opacity-20 blur-xl"></div>
               <img
-                src="/api/placeholder/500/400"
+                src={f12}
                 alt="Chemistry lab"
                 className="relative z-10 rounded-lg shadow-xl"
               />
@@ -326,7 +376,7 @@ const AboutPage = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-90 object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-70"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4">

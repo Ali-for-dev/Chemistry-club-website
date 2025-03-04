@@ -56,14 +56,9 @@ const Navbar = () => {
             >
               About Us
             </Link>
+
             <a
-              href="#"
-              className="text-white hover:text-green-400 transition-colors"
-            >
-              Members
-            </a>
-            <a
-              href="#"
+              href="/events"
               className="text-white hover:text-green-400 transition-colors"
             >
               Events
