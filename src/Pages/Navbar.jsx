@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Beaker, Menu, X } from "lucide-react";
+import { Atom, Beaker, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Beaker className="h-8 w-8 text-fuchsia-600" />
+            <Atom className="h-8 w-8 text-fuchsia-600" />
             <span className="text-xl font-bold">MolecularMinds</span>
           </div>
 

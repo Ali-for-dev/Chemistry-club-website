@@ -9,7 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Navbar from "./Navbar";
-
+import fd from "../assets/icon.png";
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -376,9 +376,11 @@ const ContactPage = () => {
       {/* Footer */}
       <div className="bg-gray-900 py-6 mt-16">
         <div className="container mx-auto px-4 md:px-6 text-center text-gray-400">
-          <p>
-            &copy; {new Date().getFullYear()} MolecularMinds. All rights
-            reserved.
+          <p className="inline-flex items-center">
+            &copy; {new Date().getFullYear()} DevShoom. All rights reserved.
+            <a href="https://www.instagram.com/devshroom_club/" target="_blank">
+              <img src={fd} alt="Logo" className="ml-2 w-6 h-6 inline-block" />
+            </a>
           </p>
         </div>
       </div>

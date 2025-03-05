@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ChevronDown, Beaker, FlaskConical, Atom, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import fd from "../assets/icon.png";
 const LandingPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -36,7 +37,7 @@ const LandingPage = () => {
       <div className="container mx-auto px-4 md:px-6 pt-32 pb-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight ">
               Explore the <span className="text-fuchsia-600">Wonders</span> of
               Chemistry
             </h1>
@@ -54,7 +55,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="relative h-64 md:h-auto flex justify-center">
-            <div className="absolute w-48 h-48 md:w-64 md:h-64 bg-fuchsia-600 rounded-full opacity-20 animate-pulse"></div>
+            <div className="absolute w-48 h-48 md:w-64 md:h-64 bg-blue-600 rounded-full opacity-20 animate-pulse"></div>
             <div className="relative z-10">
               <Atom className="w-48 h-48 md:w-64 md:h-64 text-fuchsia-600" />
             </div>
@@ -149,7 +150,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Beaker className="h-6 w-6 text-fuchsia-600" />
+                <Atom className="h-10 w-10 text-fuchsia-400" />
                 <span className="text-lg font-bold">MolecularMinds</span>
               </div>
               <p className="text-gray-400">
@@ -223,6 +224,9 @@ const LandingPage = () => {
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>&copy; 2025 DevShroom. All rights reserved.</p>
+            <a href="https://www.instagram.com/devshroom_club/" target="_blank">
+              <img src={fd} alt="Logo" className="ml-2 w-6 h-6 inline-block" />
+            </a>
           </div>
         </div>
       </footer>
